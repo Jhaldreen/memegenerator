@@ -1,5 +1,10 @@
 {% extends "base.html" %}
-{% block title %}Meme Generator{% endblock %}
+
 {% block body %}
-<img src="{{ path }}" />
+<div class="text-center">
+    <img src="{{ path }}" class="meme-img" alt="Generated Meme">
+    <div>
+        <a href="{{ path }}" download="my-meme.jpg" class="btn btn-success mt-3">Download Meme</a>
+    </div>
+</div>
 {% endblock %}
